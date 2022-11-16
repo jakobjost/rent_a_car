@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+
+    <img  src="../../../assets/nac_white.png"   style="max-width: 280%; max-height: 280%;">
+    <span style="flex: 1 1 auto"></span>
+    <button routerLink="/login" mat-raised-button color="white" style="width:auto; font-size: 18px;">Prijava</button>
+    <span style="width: 20px;"></span>
+    <button routerLink="/sign-up" mat-raised-button color="white" style="width:auto; font-size: 18px;">Registracija</button>
+
+</mat-toolbar>
+
+<section>
+        <mat-card style="width: fit-content;margin-left: auto; margin-right: 50px; margin-top:30px; " >
+          <mat-card-header color="primary" >
+            <mat-card-title style="font-size:25px;">Prijava</mat-card-title>
+            <div mat-card-avatar class="exm"></div>
+          </mat-card-header>
+          <form [formGroup]="prijavaForm" (submit)="loginUser()">
+            <mat-form-field style="width:400px !important">
+              <mat-label style="font-size: 18px;">Email</mat-label>
+              <input style="font-size: 18px;" formControlName="email" matInput>
+            </mat-form-field>
+            <br>
+            <mat-form-field style="width:400px !important">
+              <mat-label style="font-size: 18px;">Geslo</mat-label>
+              <input style="font-size: 18px;" type="password" formControlName="password" matInput>
+            </mat-form-field>
+            <br>
+            <button type="submit" mat-raised-button color="primary">Prijava</button>
+          </form>
+        </mat-card>
+  </section>

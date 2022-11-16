@@ -1,0 +1,68 @@
+.example-tab-icon {
+    margin-right: 8px;
+  }
+  .example-card {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  table {
+    width: 100%;
+  }
+
+  span.audi {
+    background: url(https://raw.githubusercontent.com/dangnelson/car-makes-icons/master/svgs/audi.svg) no-repeat center center;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    width: 36px;
+}
+
+span.seat {
+    background: url(https://raw.githubusercontent.com/dangnelson/car-makes-icons/master/svgs/seat.svg) no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    width: 36px;
+}
+
+span.skoda {
+    background: url(https://raw.githubusercontent.com/dangnelson/car-makes-icons/master/svgs/skoda.svg) no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    width: 36px;
+}
+
+span.vw {
+    background: url(https://raw.githubusercontent.com/dangnelson/car-makes-icons/master/svgs/volkswagen.svg) no-repeat top left;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    width: 36px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

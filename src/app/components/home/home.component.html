@@ -1,0 +1,168 @@
+<mat-toolbar color="primary">
+
+    <img  src="../../../assets/nac_white.png"   style="max-width: 280%; max-height: 280%;">
+    <span style="flex: 1 1 auto"></span>
+    <button type="submit" (click)="logout()" style="width:auto; font-size: 18px;" mat-raised-button color="white">Odjava</button>
+</mat-toolbar>
+<mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">home</mat-icon>
+        Domača stran
+      </ng-template>
+      
+      <!-- MENU BUTTON - ODPIRANJE NOVE NAJEMNE POGODBE, PREVOZA ALI OSTALO-->
+      <button mat-icon-button [matMenuTriggerFor]="menu"  > 
+        <mat-icon style="font-size: 28px;">dashboard icon</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="avti">
+          <mat-icon style="color: rgb(18, 18, 133);">collections_bookmark</mat-icon>
+          <span>Nova najemna pogodba</span>
+        </button>
+        <button mat-menu-item [matMenuTriggerFor]="avti">
+          <mat-icon style="color: rgb(68, 68, 160);">directions_car</mat-icon>
+          <span>Nov prevoz</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon style="color: rgb(96, 96, 226);">collections_bookmark</mat-icon>
+          <span>Nova rezervacija</span>
+        </button>
+      </mat-menu>
+
+      <mat-menu #avti="matMenu">
+        <button mat-menu-item><span class="audi"></span>AUDI Q5 MB11-ABC</button>
+        <button mat-menu-item><span class="seat"></span>SEAT LEON MB12-ABC</button>
+        <button mat-menu-item><span class="skoda"></span>ŠKODA OCTAVIA MB13-ABC</button>
+        <button mat-menu-item><span class="vw"></span>VW GOLF MB14-ABC</button>
+        <button mat-menu-item><span class="audi"></span>AUDI A3 MB15-ABC</button>
+      </mat-menu>
+      <mat-grid-list cols="2" rowHeight="2:1">
+        <mat-grid-tile>
+          <table style="margin-left:10px ;">
+            <tr>
+              <th style="align-content: center; text-align: center;">REZERVACIJE</th>
+            </tr>
+            <tr>
+              <th>Številka dokumenta</th>
+              <th>Stranka</th>
+              <th>Ura</th>
+            </tr>
+            <tr>
+              <th>508555</th>
+              <th>Joža Joža</th>
+              <th>12:00</th>
+            </tr>
+            <tr>
+              <th>508558</th>
+              <th>Porsche Šentiljska</th>
+              <th>12:30</th>
+            </tr>
+            
+          </table>
+
+
+
+
+
+
+        </mat-grid-tile>
+        <mat-grid-tile>
+          
+          <table >
+            <tr>
+              <th style="align-content: center; text-align: center;">NAJEMNE POGODBE ODPRTE DANES</th>
+            </tr>
+            <tr>
+              <th>Številka dokumenta</th>
+              <th>Stranka</th>
+              <th>Ura</th>
+            </tr>
+            <tr>
+              <th>508555</th>
+              <th>Joža Joža</th>
+              <th>12:00</th>
+            </tr>
+            <tr>
+              <th>508558</th>
+              <th>Porsche Šentiljska</th>
+              <th>12:30</th>
+            </tr>
+            
+          </table>
+
+
+
+
+
+        </mat-grid-tile>
+        <mat-grid-tile>
+          
+          <table >
+            <tr>
+              <th style="align-content: center; text-align: center;">NAJEMNE POGODBE KI SE ZAKJUČUJEJO</th>
+            </tr>
+            <tr>
+              <th>Številka dokumenta</th>
+              <th>Stranka</th>
+              <th>Ura</th>
+            </tr>
+            <tr>
+              <th>508555</th>
+              <th>Joža Joža</th>
+              <th>12:00</th>
+            </tr>
+            <tr>
+              <th>508558</th>
+              <th>Porsche Šentiljska</th>
+              <th>12:30</th>
+            </tr>
+            
+          </table>
+
+        </mat-grid-tile>
+        <mat-grid-tile>4</mat-grid-tile>
+      </mat-grid-list>
+
+
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">collections_bookmark</mat-icon>
+        Najemne pogodbe
+      </ng-template>
+      Content 2
+    </mat-tab>
+  
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon class="example-tab-icon">directions_car</mat-icon>
+        Prevozi
+      </ng-template>
+  
+      Content 3
+    </mat-tab>
+
+    <mat-tab>
+        <ng-template mat-tab-label>
+          <mat-icon class="example-tab-icon">library_books</mat-icon>
+          Rezervacije
+        </ng-template>
+    
+        Content 3
+      </mat-tab>
+ 
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon class="example-tab-icon">credit_card</mat-icon>
+      Administracija
+    </ng-template>
+
+    Content 3
+  </mat-tab>
+</mat-tab-group>
+
+
